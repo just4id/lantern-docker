@@ -1,12 +1,12 @@
 FROM ubuntu:18.04
-MAINTAINER Richard Yu <xiaoqingfengatgm@gmail.com>
-# https://github.com/xiaoqingfengATGH/lantern
+MAINTAINER Jacky Zhang <just44id@aol.com>
+# https://github.com/just4id/lantern-docker
 # lastest lantern version: 5.9.10
 WORKDIR /root
 RUN apt-get update  && \
          apt-get -y install wget libwebkit2gtk-4.0-37 libappindicator3-1 && \
 	 wget -O lantern.deb https://raw.githubusercontent.com/getlantern/lantern-binaries/master/lantern-installer-64-bit.deb?ver=5.9.10 && \
-	 wget -O settings.yaml https://raw.githubusercontent.com/xiaoqingfengATGH/lantern/master/settings.yaml?ver=5.9.10 && \
+	 wget -O settings.yaml https://raw.githubusercontent.com/just4id/lantern-docker/master/settings.yaml?ver=5.9.10 && \
          dpkg -i lantern.deb && \
          rm -rf lantern.deb && \
          apt-get -f install && \
