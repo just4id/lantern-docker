@@ -15,7 +15,7 @@ Lastest verified for Lantern 5.9.10. @ 2020.6.9
 ```docker pull xiaoqingfeng999/lantern```
 
 ## Build yourself :
-```docker build -t just4id/lantern-docker https://raw.githubusercontent.com/xiaoqingfengATGH/lantern/master/Dockerfile```
+```docker build -t just4id/lantern-docker https://raw.githubusercontent.com/just4id/lantern-docker/master/Dockerfile```
 
 ## Run：
 ```docker run -itd --restart=always --name lantern -p 3128:3128 -p 3129:3129 -p 8080:8080 just4id/lantern-docker```
